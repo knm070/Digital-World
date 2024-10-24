@@ -2,7 +2,7 @@ import OpportunityBg from '../../assets/images/Raqamlidunyo/OpportunityBg.jpg'
 
 const Opportunity = () => {
   return (
-    <div className="flex items-center justify-center pt-[20px] ">
+    <div className="flex items-center justify-center pt-[20px] bg-[#FFFFFF]">
         <div className='relative container '>
             <img className='rounded-[64px] ' src={OpportunityBg} alt="" width={1596} height={700}   style={{background: `linear-gradient(0deg, rgba(0, 0, 0, 0) -101.02%, #000000 173.28%), linear-gradient(90deg, #0D1322 1%, rgba(0, 0, 0, 0) 25%), linear-gradient(270deg, #0D1322 1%, rgba(0, 0, 0, 0) 25%)`}}/>
             <div className='flex flex-col items-center justify-center absolute top-[158px] px-[145px]'>

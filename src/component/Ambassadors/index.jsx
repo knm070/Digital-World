@@ -46,7 +46,7 @@ const Ambassadors = () => {
         },
     ]
   return (
-    <div className='py-[120px]'>
+    <div className='py-[120px] bg-[#FFFFFF]'>
         <div className='flex flex-col items-center justify-center'>
         <p className='py-[4px] px-[16px] text-[12px] rounded-[16px]' style={{ color : '#413DDE' , border: '1px solid'}}>AMBASSADORS</p>
             <h2 className='pt-[16px] text-[48px] ' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Ambassadors</h2>

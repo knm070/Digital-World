@@ -19,7 +19,7 @@ const Statistics = () => {
     
 
   return (
-    <div className='py-[120px] flex justify-center'>
+    <div className='py-[120px] flex justify-center bg-[#FFFFFF]'>
         <div className='bg-[#6561FF0F] py-[64px] px-[48px] rounded-[48px] flex gap-[32px] container'>
             {statistics.map((item, index) => {
                 return(
