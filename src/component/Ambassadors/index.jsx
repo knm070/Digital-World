@@ -48,12 +48,12 @@ const Ambassadors = () => {
   return (
     <div className='py-[120px] bg-[#FFFFFF]'>
         <div className='flex flex-col items-center justify-center'>
-        <p className='py-[4px] px-[16px] text-[12px] rounded-[16px]' style={{ color : '#413DDE' , border: '1px solid'}}>AMBASSADORS</p>
-            <h2 className='pt-[16px] text-[48px] ' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Ambassadors</h2>
-            <p className='text-[20px] text-center w-[719px] pt-[16px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#000000CC'}}>We are selecting ambassadors from the top 20 countries in IT business, investment, and education sectors.</p>
+        <p className='py-[4px] px-[16px] text-[12px] rounded-[16px]' style={{ color : '#413DDE' , border: '1px solid', background:' linear-gradient(90deg, rgba(80, 76, 234, 0.20) 0%, rgba(80, 76, 234, 0.00) 100%), linear-gradient(270deg, rgba(80, 76, 234, 0.20) -1.49%, rgba(80, 76, 234, 0.00) 98.07%), #FFF', boxShadow: '0px 0.636px 0px 0px rgba(255, 255, 255, 0.30) inset'}}>AMBASSADORS</p>
+            <h2 className='pt-[16px] text-[48px] sm:text-[28px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Ambassadors</h2>
+            <p className='text-[20px] text-center w-[719px] pt-[16px] sm:w-full sm:text-[16px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#000000CC'}}>We are selecting ambassadors from the top 20 countries in IT business, investment, and education sectors.</p>
         </div>
 
-        <div className='flex justify-center gap-[32px] pt-[64px]'>
+        <div className='flex justify-center gap-[32px] pt-[64px] flex-wrap'>
             {ambassadors.map((item, index) => {
                 return (
                     <div className='w-[375px] h-[480px] object-contain flex flex-col justify-end rounded-[44px] overflow-hidden' style={{backgroundImage: `url(${item.image})`,backgroundSize: 'cover',backgroundPosition: 'center',}}>
