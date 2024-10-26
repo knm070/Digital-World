@@ -49,9 +49,9 @@ const Navbar = () => {
             
                 <div className='max-sm:hidden sm:hidden md:block '>
                     <ul className='flex gap-[32px] '>
-                        <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}}>Ambassadors</li>
+                        <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}} onClick={() =>  handleNavigation('/ambassadors')}>Ambassadors</li>
                         <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}} onClick={() =>  handleNavigation('/experts')}>Experts</li>
-                        <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}}>Activities</li>
+                        <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}}  onClick={() =>  handleNavigation('/activities')}>Activities</li>
                         <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}}>About</li>
                         <li className='text-[16px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#000000'}}>Contact</li>
                     </ul>
