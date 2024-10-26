@@ -21,6 +21,7 @@ const Login = () => {
     ]
 
   return (
+    <div>
     <div className='flex flex-col items-center'>
         <Navbar/>
         <div className='mt-[20px] py-[120px] flex gap-[20px] w-full justify-center items-start container'>
@@ -53,6 +54,7 @@ const Login = () => {
             </div>
         </div>  
 
+    </div>
         <Footer/>
     </div>
   )

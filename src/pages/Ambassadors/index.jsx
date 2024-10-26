@@ -6,6 +6,7 @@ import Ambassador2 from '../../assets/images/ambassador2.jpg'
 import Twitter from '../../assets/icons/twitterWhiteIcon.svg'
 import Linkedin from '../../assets/icons/linkedinWhiteIcon.svg'
 import BasketBall from '../../assets/icons/basketBallWhiteIcon.svg'
+import View from '../../assets/icons/viewmore.svg'
 
 const AmbassadorsPage = () => {
     const ambassadors = [
@@ -129,7 +130,13 @@ const AmbassadorsPage = () => {
             })}
         </div>
       </div>
-  
+      <div className='flex justify-center mb-[120px] mt-[32px]'>
+<button className='flex items-center justify-center py-[12px] px-[24px]'  style={{borderRadius: '12px',
+background: '#F3F3F7'}}>
+    <img className='mr-[10px]' src={View}/>
+    <p>View more</p>
+</button>
+</div>
   <Footer/>
 
     </div>

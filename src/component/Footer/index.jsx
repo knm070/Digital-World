@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <div className='flex justify-center pt-[120px] bg-[#FFFFFF] '  style={{boxShadow: '0px -1px 24px 0px #0000000A', borderRadius:'120px 120px 0 0'}}>
     <div className=' container'>
-        <div className='flex justify-between flex-wrap w-full pb-[48px] md:px-[20px] sm:flex sm:justify-center' style={{borderBottom: '1px solid #0000001A'}}>
-            <div className='w-[330px] sm:w-full '>
-                <div className='flex items-center gap-[24px] sm:justify-center'>
+        <div className='flex justify-between flex-wrap w-full pb-[48px] md:px-[20px] sm:flex sm:justify-center md:justify-between md:items-center' style={{borderBottom: '1px solid #0000001A'}}>
+            <div className='w-[330px] sm:w-full md:w-[330px]'>
+                <div className='flex items-center gap-[24px] sm:justify-center md:justify-start'>
                     <img src={logo} alt="" />
                     <h2 className='text-[24px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#030712'}}>Raqamli dunyo</h2>
                 </div>
-                <p className='text-[13px] pt-[24px] sm:text-center' style={{fontFamily:'Inter', fontWeight:'400', color:'#4B5563'}}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                <p className='text-[13px] pt-[24px] sm:text-center md:text-left' style={{fontFamily:'Inter', fontWeight:'400', color:'#4B5563'}}>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
             </div>
 
             <div className='flex flex-wrap gap-[120px] lg:gap-[100px] md:gap-[80px] sm:pt-[40px] '>
