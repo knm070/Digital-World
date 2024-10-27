@@ -47,7 +47,7 @@ const Experts = () => {
             <p className='py-[4px] px-[16px] text-[12px] rounded-[16px] ' 
             style={{ color : '#413DDE' , border: '1px solid', background:' linear-gradient(90deg, rgba(80, 76, 234, 0.20) 0%, rgba(80, 76, 234, 0.00) 100%), linear-gradient(270deg, rgba(80, 76, 234, 0.20) -1.49%, rgba(80, 76, 234, 0.00) 98.07%), #FFF', boxShadow: '0px 0.636px 0px 0px rgba(255, 255, 255, 0.30) inset'}}
             >EXPERTS</p>
-            <h2 className='pt-[16px] text-[48px] sm:text-[28px] max-sm:text-[28px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Experts</h2>
+            <h2 className='pt-[16px] text-[48px] sm:text-[28px] max-sm:text-[28px] md:text-[48px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Experts</h2>
             <p className='text-[20px]  w-[719px] pt-[16px] xl:text-center lg:text-center md:text-center sm:text-center sm:w-full sm:text-[16px] max-sm:text-[16px] max-sm:text-center' style={{fontFamily:'Inter', fontWeight:'400', color:'#000000CC'}}>We are selecting ambassadors from the top 20 countries in IT business, investment, and education sectors.</p>
         </div>
 

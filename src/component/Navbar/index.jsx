@@ -33,6 +33,9 @@ const Navbar = () => {
         if(location.pathname === '/experts') {
             return '#F3F3F7'
         }
+        else if(location.pathname === '/') {
+            return '#FFFFFF'
+        }
     }
 
 
