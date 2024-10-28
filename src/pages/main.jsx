@@ -22,7 +22,7 @@ const Main = () => {
 	// if (isLoading) return <div>Loading...</div>;
 	// if (error) return <div>Error: {error.message}</div>;
 	return (
-		<div className='bg-[#F3F3F7] '>
+		<div className='bg-[#F3F3F7] w-full'>
 			<Navbar/>
 			<Opportunity/>
 			<Statistics/>

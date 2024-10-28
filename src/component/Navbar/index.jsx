@@ -41,8 +41,8 @@ const Navbar = () => {
 
 
   return (
-    <div className="py-[20px] flex items-center justify-center  w-full" style={{background:getBackgroundColor()}}>
-        <div className='flex flex-wrap justify-between items-center container   w-full'>
+    <div className="py-[20px] flex items-center justify-center  w-full " style={{background:getBackgroundColor()}}>
+        <div className='flex flex-wrap justify-between items-center container w-full'>
             <div className='md:hidden'>
                 <Button  icon={<MenuOutlined/>} onClick={showDrawer}/>
             </div>

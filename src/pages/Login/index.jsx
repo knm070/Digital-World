@@ -24,7 +24,7 @@ const Login = () => {
     <div>
     <div className='flex flex-col items-center'>
         <Navbar/>
-        <div className='mt-[20px] py-[120px] flex gap-[20px] w-full justify-center items-start container'>
+        <div className='mt-[20px] py-[120px] flex gap-[20px] w-full justify-center items-start container max-sm:flex-wrap '>
             <div className='p-[16px] rounded-[24px]' style={{border: '1px solid #6561FF33', backdropFilter: 'blur(25px)'}}>
                 <p className='text-[18px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#030712'}}>Profile</p>
                 <ul className='w-[304px] pt-[24px]'>
@@ -47,7 +47,7 @@ const Login = () => {
                 </ul>
             </div>
 
-            <div className='p-[32px] rounded-[32px] w-full' style={{border: '1px solid #6561FF33'}}>
+            <div className='p-[32px] rounded-[32px] w-full ' style={{border: '1px solid #6561FF33'}}>
                 {selected === 'personal-info' && <PersonalInfo/>} 
                 {selected === 'settings' && <PasswordChange/>}
                 {selected === 'activities' && <Activitiy/>}

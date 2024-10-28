@@ -29,7 +29,7 @@ const ActivitiesPage = () => {
                 >Activities</p>
             </div>
             <h2 className='text-[48px] pb-[24px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Upcoming activities</h2>
-            <p className='text-[20px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>Activities include professional support for startups, skill development seminars,<br/> and analysis for projects undertaken by the Ministry</p>
+            <p className='text-[20px] ' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>Activities include professional support for startups, skill development seminars,<br/> and analysis for projects undertaken by the Ministry</p>
         </div>
     </div>
       </div>
