@@ -9,7 +9,7 @@ import facebook from '../../assets/icons/facebookBlue.svg'
 
 const Footer = () => {
   return (
-    <div className='flex justify-center pt-[120px] bg-[#FFFFFF] w-full '  style={{boxShadow: '0px -1px 24px 0px #0000000A', borderRadius:'20vw 20vw 0 0'}}>
+    <div className='flex justify-center pt-[120px] bg-[#FFFFFF] w-full '  >
     <div className=' container'>
         <div className='flex justify-between flex-wrap w-full pb-[48px] md:px-[20px] sm:flex sm:justify-center md:justify-between md:items-center max-sm:justify-center' style={{borderBottom: '1px solid #0000001A'}}>
             <div className='w-[330px] sm:w-full md:w-[330px] max-sm:w-full max-sm:px-[10px]'>
