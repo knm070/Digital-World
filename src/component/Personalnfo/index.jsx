@@ -18,34 +18,34 @@ const PersonalInfo = () => {
 
   return (
     <div className='py-[14px]'>
-        <div className='flex items-center max-sm:justify-center'>
-            <img src={Profile} alt="" className='max-sm:w-[100px] max-sm:h-[100px]'/>
+        <div className='flex items-center max-sm:justify-center '>
+            <img src={Profile} alt="" className='max-sm:w-[100px] max-sm:h-[100px] sm:w-[160px] h-[160px]'/>
             <div>
                 <h2 className='text-[30px] max-sm:text-[18px]' style={{fontFamily: 'Inter', fontWeight:'600', color:'#101828'}}>Akbarali Khasanov</h2>
                 <p className='pt-[4px] text-[16px] max-sm:text-[14px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>I'm a Product Designer based in Tashkent.</p>
             </div>
         </div>
 
-        <div className='flex gap-[32px] max-sm:flex-wrap max-sm:pt-[20px]'>
-            <div className='w-[305px]'>
-                <div className='w-[305px]'>
+        <div className='flex gap-[32px] max-sm:flex-wrap max-sm:pt-[20px] sm:flex-col sm:items-center'>
+            <div className='w-[305px] sm:w-full sm:flex sm:items-center  sm:gap-[50px] sm:flex-wrap'>
+                <div className=' '>
                     <p className='text-[14px] pb-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#475467'}}>Country</p>
                     <span className='text-[16px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#344054'}}>Uzbekistan</span>
                 </div>
-                <div className='pt-[24px]'>
+                <div className='pt-[24px] sm:pt-0'>
                     <p className='text-[14px] pb-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#475467'}}>Organization</p>
                     <span className='text-[16px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#6561FF'}}>ITIC </span>
                 </div>
-                <div className='pt-[24px]'>
+                <div className='pt-[24px] sm:pt-0'>
                     <p className='text-[14px] pb-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#475467'}}>User code</p>
                     <span className='text-[16px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#6561FF'}}>123456</span>
                 </div>
-                <div className='pt-[24px]'>
+                <div className='pt-[24px] sm:pt-0'>
                     <p className='text-[14px] pb-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#475467'}}>Email</p>
                     <span className='text-[16px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#6561FF'}}>hi@exmample.com</span>
                 </div>
 
-                <div className='flex pt-[24px] gap-[20px]'>
+                <div className='flex pt-[24px] gap-[20px] sm:pt-0 '>
                     <img src={twitter} alt="" />
                     <img src={linkedin} alt="" />
                 </div>

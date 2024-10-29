@@ -4,14 +4,18 @@ import React from 'react'
 import activity from '../../assets/images/activity.png'
 import Arrow45 from '../../assets/icons/arrow45.svg'
 import View from '../../assets/icons/viewmore.svg'
+import astronomer from '../../assets/images/astronomer.png'
+import { useNavigate } from 'react-router-dom'
 const ActivitiesPage = () => {
+
+    const navigate = useNavigate();
     const activities = [
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
-        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
+        { image: activity, date: 'Started date • 19 Oct 2024', title:'IT Business Expert', arrow: Arrow45, text:'Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.', comment: astronomer, commentName:'Astronomer X', commentJob:'Space Exploration'},
     ]
 
 
@@ -22,14 +26,14 @@ const ActivitiesPage = () => {
         </div>     
       <div className='flex items-center justify-center bg-[#F3F3F7]'>
     <div className='container '>
-        <div className='py-[96px] bg-[#F3F3F7]'>   
+        <div className='py-[96px] bg-[#F3F3F7] max-sm:flex max-sm:flex-col max-sm:items-center sm:pl-[40px] md:pl-0'>   
             <div className='flex pb-[12px]'>
-                <p className='py-[4px] px-[16px] text-[16px] rounded-[16px] ' 
+                <p className=' text-[16px] rounded-[16px] ' 
                 style={{ color : '#413DDE' ,fontFamily:'Inter',fontWeight:'600' }}
                 >Activities</p>
             </div>
-            <h2 className='text-[48px] pb-[24px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Upcoming activities</h2>
-            <p className='text-[20px] ' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>Activities include professional support for startups, skill development seminars,<br/> and analysis for projects undertaken by the Ministry</p>
+            <h2 className='text-[48px] pb-[24px] max-sm:text-[28px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Upcoming activities</h2>
+            <p className='text-[20px] max-sm:text-center' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>Activities include professional support for startups, skill development seminars,<br/> and analysis for projects undertaken by the Ministry</p>
         </div>
     </div>
       </div>
@@ -38,7 +42,8 @@ const ActivitiesPage = () => {
     {activities.map((item) => {
         return (
             <div
-                className="p-[24px] rounded-[48px] w-full sm:w-[380px] md:w-[470px] flex flex-col items-center"
+                onClick={()=> navigate('/activities-single')}
+                className="p-[24px] rounded-[48px] w-full sm:w-[380px] md:w-[470px] flex flex-col"
                 style={{ background: '#F3F3F7' }}
             >
                 <img className="w-full rounded-t-[24px]" src={item.image} />
@@ -56,6 +61,15 @@ const ActivitiesPage = () => {
                         {item.text}
                     </p>
                 </div>
+
+                <div className='flex gap-[16px] items-center'>
+                    <img src={item.comment} alt="" width={60} height={60}/>
+                    <div>
+                        <h2 className='text-[20px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#030712'}}>{item.commentName}</h2>
+                        <p className='text-[18px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#4B5563'}}>{item.commentJob}</p>
+                    </div>
+                </div>
+                
             </div>
         );
     })}

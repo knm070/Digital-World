@@ -39,19 +39,19 @@ const ExpertsSingle = () => {
                         <p className='text-[14px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#14151A'}}>Experts</p>
                     </div>
 
-                    <div className=' p-[32px] rounded-[32px] max-w-[1272px] mt-[64px] mb-[80px]' style={{border: '1px solid #6561FF33'}}>
-                        <div className='py-[14px]'>
-                            <div className='flex items-center '>
-                                <img src={Profile} alt="" />
+                    <div className='px-[32px] py-[48px] max-sm:p-[14px] rounded-[32px] max-w-[1272px] mt-[64px] mb-[80px] mx-[10px] max-sm:max-w-full' style={{border: '1px solid #6561FF33'}}>
+                        <div className=''>
+                            <div className='flex items-center max-sm:justify-center '>
+                                <img src={Profile} alt="" className='max-sm:w-[100px] max-sm:h-[100px]'/>
                                 <div>
-                                    <h2 className='text-[30px]' style={{fontFamily: 'Inter', fontWeight:'600', color:'#101828'}}>Akbarali Khasanov</h2>
-                                    <p className='pt-[4px] text-[16px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>I'm a Product Designer based in Tashkent.</p>
+                                    <h2 className='text-[30px] max-sm:text-[18px]' style={{fontFamily: 'Inter', fontWeight:'600', color:'#101828'}}>Akbarali Khasanov</h2>
+                                    <p className='pt-[4px] text-[16px]  max-sm:text-[14px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>I'm a Product Designer based in Tashkent.</p>
                                 </div>
                             </div>
 
-                            <div className='flex gap-[32px]'>
-                                <div className='w-[305px]'>
-                                    <div className='w-[305px]'>
+                            <div className='flex gap-[32px] max-sm:flex-col'>
+                                <div className='w-[305px] max-sm:pt-[20px] max-sm:w-full'>
+                                    <div className=''>
                                         <p className='text-[14px] pb-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#475467'}}>Country</p>
                                         <span className='text-[16px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#344054'}}>Uzbekistan</span>
                                     </div>
@@ -88,7 +88,7 @@ const ExpertsSingle = () => {
 
                                         <a href="#" className='list-none ' style={{fontFamily:'Inter', fontWeight:'600', color:'#6941C6'}}>Read more</a>
                                     </div>
-                                    <div className='grid grid-cols-2 grid-rows-2 gap-[20px] pt-[32px]'>
+                                    <div className='grid grid-cols-2 grid-rows-2 gap-[20px] pt-[32px] max-sm:grid-cols-1'>
                                         {partners.map((item) => {
                                             return (
                                                 <div className='p-[24px] bg-[#F3F3F7] rounded-[12px]'>

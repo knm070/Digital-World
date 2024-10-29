@@ -5,6 +5,9 @@ const Experts = lazy(() => import('@/pages/Experts'));
 const ExpertsSingle = lazy(() => import('@/pages/ExpertsSingle'));
 const Activities = lazy(() => import('@/pages/Activities'));
 const Ambassadors = lazy(() => import('@/pages/Ambassadors'));
+const AmbassadorsSingle = lazy(() => import('@/pages/AmbassadorsSingle'));
+const ActivitiesSingle = lazy(() => import('@/pages/ActivitiesSingle'));
+
 export const Data = [
 	{
 		id: 1,
@@ -37,5 +40,15 @@ export const Data = [
 		path: '/activities',
 		component: Activities,
 		
+	},
+	{
+		id: 7,
+		path: '/ambassadors-single',
+		component: AmbassadorsSingle,
+	},
+	{
+		id: 8,
+		path: '/activities-single',
+		component: ActivitiesSingle,
 	},
 ];

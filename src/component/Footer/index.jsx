@@ -2,14 +2,14 @@ import logo from '../../assets/icons/logo.svg'
 import phone from '../../assets/icons/phoneBlue.svg'
 import mail from '../../assets/icons/mailBlue.svg'
 import instagram from '../../assets/icons/instagramBlue.svg'
-import twitter from '../../assets/icons/twitterBlue.svg'
 import telegram from '../../assets/icons/telegramBlue.svg'
+import twitter from '../../assets/icons/twitterBlue.svg'
 import linkedin from '../../assets/icons/linkedinBlue.svg'
 import facebook from '../../assets/icons/facebookBlue.svg'
 
 const Footer = () => {
   return (
-    <div className='flex justify-center pt-[120px] bg-[#FFFFFF] w-full '  >
+    <div className='flex justify-center pt-[120px] bg-[#FFFFFF] w-full '  style={{boxShadow: '0px -1px 24px 0px #0000000A', borderRadius:'10vw 10vw 0 0'}}>
     <div className=' container'>
         <div className='flex justify-between flex-wrap w-full pb-[48px] md:px-[20px] sm:flex sm:justify-center md:justify-between md:items-center max-sm:justify-center' style={{borderBottom: '1px solid #0000001A'}}>
             <div className='w-[330px] sm:w-full md:w-[330px] max-sm:w-full max-sm:px-[10px]'>

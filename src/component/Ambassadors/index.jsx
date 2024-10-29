@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Ambassador1 from '../../assets/images/ambassador1.jpg'
 import Ambassador2 from '../../assets/images/ambassador2.jpg'
 import Twitter from '../../assets/icons/twitterWhiteIcon.svg'
 import Linkedin from '../../assets/icons/linkedinWhiteIcon.svg'
 import BasketBall from '../../assets/icons/basketBallWhiteIcon.svg'
+import  Modal from '../Modal'
 
 const Ambassadors = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+
     const borderImageSource = `linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     conic-gradient(from 90deg at 50% 50%, rgba(255, 255, 255, 0) -35.78deg, rgba(255, 255, 255, 0) 256.65deg, rgba(255, 255, 255, 0.3) 289.14deg, rgba(255, 255, 255, 0) 324.22deg, rgba(255, 255, 255, 0) 616.65deg),
     linear-gradient(270deg, rgba(80, 76, 234, 0.1) -1.49%, rgba(80, 76, 234, 0) 98.07%),
@@ -77,8 +83,12 @@ const Ambassadors = () => {
         </div>
 
         <div className='flex justify-center pt-[64px]'>
-            <button className='py-[12px] px-[24px] rounded-full bg-[#F3F3F7]' style={{fontFamily:'Inter', fontWeight:'500', color:'#030712'}}>View all</button>
+            <button onClick={openModal} className='py-[12px] px-[24px] rounded-full bg-[#F3F3F7]' style={{fontFamily:'Inter', fontWeight:'500', color:'#030712'}}>View all</button>
         </div>
+            <Modal isOpen={isModalOpen} onClose={closeModal}>
+                <h2 className="text-lg font-semibold mb-4">Modal Title</h2>
+                <p className="text-gray-700">This is the content of the modal!</p>
+            </Modal>
     </div>
   )
 }

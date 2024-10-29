@@ -16,7 +16,7 @@ const Activitiy = () => {
   return (
     <div>
         <h2 className='pb-[20px] text-[20px]' style={{ fontFamily: 'Inter', fontWeight:'600', color:'#101828',borderBottom:'1px solid #F3F3F7'}}>Activities</h2>
-        <div className='grid grid-cols-3 grid-rows-2 pt-[20px]' style={{columnGap:'32px', rowGap:'20px'}}>
+        <div className='grid grid-cols-3 grid-rows-2 pt-[20px] max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3' style={{columnGap:'32px', rowGap:'20px'}}>
             {activities.map((item) => {
                 return (
                     <div className='bg-[#F3F3F7] rounded-[16px]'>

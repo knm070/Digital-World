@@ -24,15 +24,15 @@ const Login = () => {
     <div>
     <div className='flex flex-col items-center'>
         <Navbar/>
-        <div className='mt-[20px] py-[120px] flex gap-[20px] w-full justify-center items-start container max-sm:flex-wrap '>
-            <div className='p-[16px] rounded-[24px]' style={{border: '1px solid #6561FF33', backdropFilter: 'blur(25px)'}}>
+        <div className='mt-[20px] py-[120px] flex gap-[20px] w-full justify-center items-start container max-sm:flex-wrap max-sm:mx-[20px] sm:flex-col sm:items-center md:flex-row md:items-start'>
+            <div className='p-[16px] rounded-[24px] max-sm:p-[12px] sm:w-full md:w-[350px]' style={{border: '1px solid #6561FF33', backdropFilter: 'blur(25px)'}}>
                 <p className='text-[18px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#030712'}}>Profile</p>
-                <ul className='w-[304px] pt-[24px]'>
+                <ul className='w-[304px] pt-[24px] max-sm:w-[250px] sm:w-full md:w-[304px]'>
                     {profile.map((item) => {
                         return(
                             <li key={item.id}
                                 onClick={() =>setSelected(item.id)}
-                                className={`flex items-center gap-[12px] p-[12px] cursor-pointer ${selected === item.id ? 'bg-[#F6F6FF] rounded-[12px]' : ''}`}
+                                className={`flex items-center gap-[12px] p-[12px] cursor-pointer max-sm:p-[8px] ${selected === item.id ? 'bg-[#F6F6FF] rounded-[12px]' : ''}`}
                                 style={{fontFamily:'Inter', fontWeight:'500', color: selected === item.id ? '#6561FF' : '#030712'}}
                             >
                                 <img src={selected === item.id ? item.icon1 : item.icon2} alt="" />
@@ -41,13 +41,13 @@ const Login = () => {
                             </li>
                         )
                     })}
-                    <li className='flex items-center gap-[12px] p-[12px] cursor-pointer' style={{fontFamily:'Inter', fontWeight:'500', color:'#030712'}}>
+                    <li className='flex items-center gap-[12px] p-[12px] cursor-pointer max-sm:p-[8px]' style={{fontFamily:'Inter', fontWeight:'500', color:'#030712'}}>
                         <img src={Logout} alt="" />
                         Logout</li>
                 </ul>
             </div>
 
-            <div className='p-[32px] rounded-[32px] w-full ' style={{border: '1px solid #6561FF33'}}>
+            <div className='p-[32px] rounded-[32px] w-full max-sm:p-[16px] px-[100px] max-sm:w-[300px] sm:px-[50px]' style={{border: '1px solid #6561FF33'}}>
                 {selected === 'personal-info' && <PersonalInfo/>} 
                 {selected === 'settings' && <PasswordChange/>}
                 {selected === 'activities' && <Activitiy/>}

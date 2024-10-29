@@ -7,8 +7,10 @@ import Twitter from '../../assets/icons/twitterWhiteIcon.svg'
 import Linkedin from '../../assets/icons/linkedinWhiteIcon.svg'
 import BasketBall from '../../assets/icons/basketBallWhiteIcon.svg'
 import View from '../../assets/icons/viewmore.svg'
+import { useNavigate } from 'react-router-dom'
 
 const AmbassadorsPage = () => {
+    const navigate = useNavigate();
     const ambassadors = [
         {
             image: Ambassador1,
@@ -94,14 +96,14 @@ const AmbassadorsPage = () => {
         
       <div className='flex items-center justify-center bg-[#F3F3F7]'>
     <div className='container '>
-        <div className='py-[96px] bg-[#F3F3F7]'>   
+        <div className='py-[96px] bg-[#F3F3F7] max-sm:flex max-sm:flex-col max-sm:items-center sm:pl-[40px] md:pl-0'>   
             <div className='flex pb-[12px]'>
-                <p className='py-[4px] px-[16px] text-[16px] rounded-[16px] ' 
+                <p className='text-[16px] rounded-[16px] ' 
                 style={{ color : '#413DDE' ,fontFamily:'Inter',fontWeight:'600' }}
-                >Experts</p>
+                >Ambassadors</p>
             </div>
-            <h2 className='text-[48px] pb-[24px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Ambassadors</h2>
-            <p className='text-[20px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>We are selecting ambassadors from the top 20 countries in IT business,<br/> investment, and education sectors.</p>
+            <h2 className='text-[48px] pb-[24px] max-sm:text-[28px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Ambassadors</h2>
+            <p className='text-[20px] max-sm:text-[16px] max-sm:text-center ' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>We are selecting ambassadors from the top 20 countries in IT business,<br/> investment, and education sectors.</p>
         </div>
     </div>
       </div>
@@ -110,11 +112,11 @@ const AmbassadorsPage = () => {
       <div className='flex justify-center gap-[32px] pt-[64px] flex-wrap'>
             {ambassadors.map((item, index) => {
                 return (
-                    <div className='w-[375px] h-[480px] object-contain flex flex-col justify-end rounded-[44px] overflow-hidden' style={{backgroundImage: `url(${item.image})`,backgroundSize: 'cover',backgroundPosition: 'center',}}>
+                    <div onClick={()=>navigate('/ambassadors-single')} className='w-[375px] h-[480px] object-contain flex flex-col justify-end rounded-[44px] overflow-hidden max-sm:mx-[10px] max-sm:max-h-full' style={{backgroundImage: `url(${item.image})`,backgroundSize: 'cover',backgroundPosition: 'center',}}>
                         <div className='p-[24px] ' style={{background: '#FFFFFF33',backdropFilter: 'blur(24px)', borderRadius: '24px 24px 0 0 '}}>
                             <div className='flex justify-between items-center'>
-                                <h2 className='text-[30px] pb-[16px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#FFFFFF'}}>{item.name}</h2>
-                                <svg className='cursor-pointer' width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <h2 className='text-[30px] pb-[16px] max-sm:text-[24px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#FFFFFF'}}>{item.name}</h2>
+                                <svg className='cursor-pointer max-sm:mb-[20px]' width="24" height="30" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.0104 20.5737L18.0104 11.9894L9.42612 11.9894M5.98958 24.0102L17.8902 12.1096" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>

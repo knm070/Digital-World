@@ -42,21 +42,21 @@ const Experts = () => {
         <Navbar />
       <div >
     <div className='bg-[#F3F3F7] w-full flex items-center justify-center'>
-        <div className='py-[96px] container '>   
-            <div className='flex pb-[12px]'>
-                <p className='py-[4px] px-[16px] text-[12px] rounded-[16px] ' 
-                style={{ color : '#413DDE' , border: '1px solid', background:' linear-gradient(90deg, rgba(80, 76, 234, 0.20) 0%, rgba(80, 76, 234, 0.00) 100%), linear-gradient(270deg, rgba(80, 76, 234, 0.20) -1.49%, rgba(80, 76, 234, 0.00) 98.07%), #FFF', boxShadow: '0px 0.636px 0px 0px rgba(255, 255, 255, 0.30) inset'}}
-                >EXPERTS</p>
+        <div className='py-[96px] container  max-sm:flex max-sm:flex-col max-sm:items-center sm:pl-[40px] md:pl-0'>   
+        <div className='flex pb-[12px]'>
+                <p className='text-[16px] rounded-[16px] ' 
+                style={{ color : '#413DDE' ,fontFamily:'Inter',fontWeight:'600' }}
+                >Experts</p>
             </div>
-            <h2 className='text-[48px] pb-[24px]' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Our Experts</h2>
-            <p className='text-[20px]' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>We’re a small team on a big mission.</p>
+            <h2 className='text-[48px] pb-[24px] max-sm:text-[28px] ' style={{fontFamily:'Inter', fontWeight:'700', color:'#000000'}}>Our Experts</h2>
+            <p className='text-[20px] max-sm:text-[16px] max-sm:text-center ' style={{fontFamily:'Inter', fontWeight:'400', color:'#475467'}}>We’re a small team on a big mission.</p>
         </div>
     
     </div>
-        <div className='p-[120px] grid grid-cols-4 grid-rows-2 gap-[64px]'>
+        <div className='p-[120px] grid grid-cols-4 grid-rows-2 gap-[64px] max-sm:grid-cols-1 max-sm:p-[20px] sm:grid-cols-2 sm:p-[20px] lg:grid-cols-4 lg:p-[120px]'>
             {experts.map((item) => {
                 return(
-                    <div className='w-[335px] cursor-pointer' onClick={() => navigate('/experts/single')}>
+                    <div className='w-[335px] cursor-pointer max-sm:w-full sm:w-full' onClick={() => navigate('/experts/single')}>
                         <div className=' flex flex-col items-center'>
                         <img src={item.image} alt="" className='pb-[20px]'/>
                         <h3 className='text-[18px]' style={{fontFamily:'Inter', fontWeight:'600', color:'#101828'}}>{item.name}</h3>
